@@ -41,9 +41,11 @@ void addProduct() {
 
     printf("Enter product price: ");
     scanf("%f", &newProduct.price);
+    getchar(); // Consume newline left in input buffer
 
     printf("Enter product quantity: ");
     scanf("%d", &newProduct.quantity);
+    getchar(); // Consume newline left in input buffer
 
     generateProductID(newProduct.id);
 
